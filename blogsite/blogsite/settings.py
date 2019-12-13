@@ -21,7 +21,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #Retrieving configuration variables
 VAR_LIST = []
-VAR_LIST = config.envvar_setup(r"D:\Development\Python\\blog_settings.txt", VAR_LIST)
+SETTINGS_FILE_PATH = "/home/rotilidev/Development/Python/blog_settings.txt"
+#SETTINGS_FILE_PATH = r"D:\Development\Python\\blog_settings.txt"
+VAR_LIST = config.envvar_setup(SETTINGS_FILE_PATH, VAR_LIST)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = VAR_LIST[1]
