@@ -9,5 +9,5 @@ def envvar_setup(settings_file, var_list):
             var_list.append(line.split(':')[1])
         if line.split(':')[0] == 'BLOG_SECRETKEY':
             var_list.append(line.split(':')[1])
-
+    file.close()
     return var_list
