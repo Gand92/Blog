@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #Retrieving configuration variables
 VAR_LIST = []
-VAR_LIST = config.envvar_setup("D:\Development\Python\\blog_settings.txt", VAR_LIST)
+VAR_LIST = config.envvar_setup(r"D:\Development\Python\\blog_settings.txt", VAR_LIST)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = VAR_LIST[1]
